@@ -33,7 +33,7 @@ What followed was a full pipeline: data loading, normalization, model architectu
 ```
 📦 cifar10-cnn-classifier/
 ├── 📄 main.py                          # Main script — the entire pipeline
-├── 🖼️ cifar10_sample_images.png        # First 10 training images visualized
+├── 🖼️  cifar10_sample_images.png       # First 10 training images visualized
 ├── 📊 training_accuracy.png            # Training vs Validation accuracy plot
 ├── 📊 training_loss.png                # Training vs Validation loss plot
 ├── 🔍 sample_predictions.png           # Model predictions on test images (green=correct, red=wrong)
