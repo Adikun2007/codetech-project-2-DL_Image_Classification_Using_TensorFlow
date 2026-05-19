@@ -72,9 +72,9 @@ model.summary()
 
 # 5. Train the model
 history = model.fit(
-    x_train,
-    y_train,
-    epochs=10,
+    x_train[:10000],
+    y_train[:10000],
+    epochs=2,
     validation_split=0.2,
     batch_size=64
 )
