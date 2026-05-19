@@ -258,16 +258,17 @@ The CIFAR-10 dataset will be **automatically downloaded** by TensorFlow on first
 
 ### What to Expect
 
-```
+```text
 Downloading data from https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 ✔ Dataset loaded and normalized
 
-Epoch 1/2
-125/125 [==============================] - Training begins...
-Epoch 2/2
-125/125 [==============================] - ...
+Epoch 1/10
+625/625 [==============================] - Training begins...
+...
+Epoch 10/10
+625/625 [==============================] - Training completed
 
-313/313 - Test Accuracy: ~0.55–0.65 (2 epochs on 10k samples)
+313/313 - Test Accuracy: ~0.65–0.75 (10 epochs on the full CIFAR-10 training set)
 
 ✔ cifar10_sample_images.png saved
 ✔ training_accuracy.png saved
@@ -280,7 +281,7 @@ Model saved as cnn_model.h5
 All visualization images have been saved successfully.
 ```
 
-> **Note:** With only 10 epochs on training samples, expect ~80–85% test accuracy. This is intentional — the architecture is proven, and scaling up epochs significantly improves performance (see below).
+> **Note:** This project trains on the complete CIFAR-10 dataset (50,000 training images and 10,000 test images) for 10 epochs. The model typically achieves approximately 65–75% test accuracy, and increasing model complexity or training for more epochs can further improve performance.
 
 ---
 
